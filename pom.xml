@@ -20,13 +20,15 @@
         <version>4.41.0</version>
         <scope>compile</scope>
     </dependency>
-    <dependencies><!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
+
+    <!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.12.0</version>
             <scope>test</scope>
-        </dependency></dependencies>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
@@ -45,8 +47,9 @@
 folder -->
                         <resources>
                             <resource>
+                                <directory>src/main/resources</directory>
                                 <includes>
-                                    <directory>src/main/resources</directory>
+
                                     <include>**/*</include> <!-- Copy all files in src/main/resources -->
                                 </includes>
                             </resource>
